@@ -1,9 +1,16 @@
+'use client'
+
 import { Button } from "@/components/ui/button";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+
+  const pathname = usePathname();
+  const isOnDashboard = pathname.includes('dashboard');
+
   return (
     <header className="px-2 sm:px-5 py-1 w-full h-fit shadow-md bg-white sticky top-0">
       {/* Header Inner Container */}
@@ -30,7 +37,16 @@ const Header = () => {
 
         {/* If user is not - SignedIn */}
         <SignedIn>
-          <UserButton />
+          <div className="flex items-center gap-2">
+            <UserButton />
+            {/* Dashboard - Button */}
+            {!isOnDashboard && (
+              // hidden sm:inline
+              <Link href="/dashboard" className="">
+                <Button>Dashboard</Button>
+              </Link>
+            )}
+          </div>
         </SignedIn>
 
         <SignedOut>

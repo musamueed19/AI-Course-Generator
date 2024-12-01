@@ -42,7 +42,7 @@ export default function Sidebar() {
             <Link key={index} href={item.href} className={`flex flex-col p-2 rounded-md ${pathname === item.href ? "bg-blue-100/80 text-black" : "hover:bg-gray-100"}`}>
               <div className="flex items-center space-x-2">
                 {item.icon}
-                <span className="text-lg">{item.label}</span>
+                <span className="text-lg font-medium">{item.label}</span>
               </div>
             </Link>
           ))}
