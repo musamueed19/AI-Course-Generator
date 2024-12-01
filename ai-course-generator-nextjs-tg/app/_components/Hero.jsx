@@ -3,8 +3,8 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className="bg-gray-100/70">
-      <div className="mx-auto max-w-screen-xl px-4 py-20 lg:flex lg:items-center">
-        <div className="mx-auto max-w-5xl text-center">
+      <div className="mx-auto max-w-screen-xl px-2 sm:px-4 py-20 lg:flex lg:items-center">
+        <div className="mx-auto w-full sm:max-w-5xl text-center">
           <h1 className="text-3xl font-extrabold text-primary sm:text-5xl">
             AI Course Generator
             <p className="font-extrabold text-3xl sm:text-4xl text-black sm:block">

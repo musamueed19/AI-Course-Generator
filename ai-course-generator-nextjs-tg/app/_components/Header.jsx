@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-      <header className="px-5 py-1 w-full h-fit shadow-md bg-white sticky top-0">
+      <header className="px-2 sm:px-5 py-1 w-full h-fit shadow-md bg-white sticky top-0">
           
 {/* Header Inner Container */}
           {/* Logo & Get Started - Left - Right Side */}
