@@ -17,7 +17,7 @@ export default function DashboardLayout({ children }) {
         <Header />
 
         {/* Main Body Content - Children Section */}
-        {children}
+        <div className="w-[95%] mx-auto py-6">{children}</div>
       </div>
     </div>
   );

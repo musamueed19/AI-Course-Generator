@@ -51,7 +51,7 @@ export default function Sidebar() {
             >
               <div className="flex items-center space-x-2">
                 {item.icon}
-                <span className="text-lg font-medium">{item.label}</span>
+                <span className="text-[1rem] font-medium">{item.label}</span>
               </div>
             </Link>
           ))}
@@ -61,8 +61,8 @@ export default function Sidebar() {
           {/* Progress Bar - Section */}
           <div className="w-[90%] sm:w-[85%] mx-auto">
             <Progress value={60} />
-            <h2 className="text-sm my-2">3 Out of 5 Course created</h2>
-            <h2 className="text-xs text-gray-500">
+            <h2 className="text-sm my-2 font-medium">3 Out of 5 Course created</h2>
+            <h2 className="text-xs text-gray-500 font-medium">
               Upgrade your plan for unlimited course generation
             </h2>
           </div>
