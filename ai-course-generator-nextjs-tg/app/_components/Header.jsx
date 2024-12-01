@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+// import { UserButton } from "@clerk/clerk-react";
+// import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,10 +28,17 @@ const Header = () => {
         </Link>
 
         {/* Get Started - Button Section */}
-        <Link href='/dashboard'>
-        
-          <Button>Get Started</Button>
-        </Link>
+
+        {/* If user is not - SignedIn */}
+        {/* <SignedIn>
+          <UserButton />
+        </SignedIn> */}
+
+        {/* <SignedOut> */}
+          <Link href="/dashboard">
+            <Button>Get Started</Button>
+          </Link>
+        {/* </SignedOut> */}
       </div>
     </header>
   );
