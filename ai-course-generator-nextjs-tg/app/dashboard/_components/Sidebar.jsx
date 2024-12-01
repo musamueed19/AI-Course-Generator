@@ -36,7 +36,7 @@ export default function Sidebar() {
         </div>
 
         {/* Menu Lists - Section */}
-        <ul className="px-2 lg:pr-4 xl:pr-5 space-y-1 my-6">
+        <ul className="px-2 space-y-1 my-6">
           {menuLists.map((item, index) => (
             // pathname.includes(item.href)
             <Link key={index} href={item.href} className={`flex flex-col p-2 rounded-md ${pathname === item.href ? "bg-blue-100/80 text-black" : "hover:bg-gray-100"}`}>

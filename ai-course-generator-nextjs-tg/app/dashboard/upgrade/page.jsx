@@ -1,7 +1,7 @@
 
 
-export default function ExplorePage() {
+export default function UpgradePage() {
   return (
-    <div>ExplorePage</div>
+    <div>UpgradePage</div>
   )
 }

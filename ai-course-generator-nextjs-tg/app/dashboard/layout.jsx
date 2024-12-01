@@ -8,7 +8,7 @@ export default function DashboardLayout({ children }) {
   return (
     <div className="flex">
       {/* Sidebar - Section */}
-      <div className="w-60 md:inline hidden min-h-screen">
+      <div className="md:w-52 lg:w-60 md:inline hidden min-h-screen">
         <Sidebar />
       </div>
 
