@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="mx-auto max-w-5xl text-center">
           <h1 className="text-3xl font-extrabold text-primary sm:text-5xl">
             AI Course Generator
-            <p className="font-extrabold text-black sm:block">
+            <p className="font-extrabold text-3xl sm:text-4xl text-black sm:block">
               Custom Learning Paths, Powered by AI
             </p>
           </h1>
