@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <GoogleOneTap />
+        {/* <GoogleOneTap /> */}
         <body className={inter.className}>{children}</body>
       </html>
     </ClerkProvider>

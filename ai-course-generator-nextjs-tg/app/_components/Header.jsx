@@ -4,13 +4,12 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-      <header className="px-2 sm:px-5 py-1 w-full h-fit shadow-md bg-white sticky top-0">
-          
-{/* Header Inner Container */}
-          {/* Logo & Get Started - Left - Right Side */}
+    <header className="px-2 sm:px-5 py-1 w-full h-fit shadow-md bg-white sticky top-0">
+      {/* Header Inner Container */}
+      {/* Logo & Get Started - Left - Right Side */}
       <div className="flex items-center justify-between">
         {/* Logo - Group Section */}
-        <Link href='/' className="flex flex-col w-fit -space-y-3">
+        <Link href="/" className="flex flex-col w-fit -space-y-3">
           {/* NextJS Image - component is helpful in optimizing images */}
           <Image
             src="/logo.svg"
@@ -24,11 +23,13 @@ const Header = () => {
             <span className="text-blue-800 text-3xl font-extrabold">C</span>
             ourseGen
           </h1>
-              </Link>
-              
+        </Link>
 
-              {/* Get Started - Button Section */}
-              <Button>Get Started</Button>
+        {/* Get Started - Button Section */}
+        <Link href='/dashboard'>
+        
+          <Button>Get Started</Button>
+        </Link>
       </div>
     </header>
   );
